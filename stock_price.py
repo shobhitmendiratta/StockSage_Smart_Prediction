@@ -20,7 +20,7 @@ class Prediction:
         return f'Prediction: {self.value:.2f} ({self.r2_score:.2%})'
 
 
-def make_prediction(inputs: list[float], outputs: list[float], input_value: float, plot: bool = False) -> Prediction:
+def do_predictions(inputs: list[float], outputs: list[float], input_value: float, plot: bool = False) -> Prediction:
     if len(inputs) != len(outputs):
         raise Exception(f'Length of "inputs" & "outputs" must match')
 
@@ -79,6 +79,6 @@ if __name__ == '__main__':
     my_input = stock_price[-1]
 
     # Create a prediction for the next 5 days
-    prediction = make_prediction(inputs=days, outputs=stock_price, input_value=my_input, plot=True)
+    prediction = do_predictions(inputs=days, outputs=stock_price, input_value=my_input, plot=True)
     print('Input:', my_input)
     print(prediction)
