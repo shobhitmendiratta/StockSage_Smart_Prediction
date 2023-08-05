@@ -11,7 +11,7 @@ Please note that this project is just for fun and it may not be accurate due to 
 % pip install yfinance
 
 ## Run the program
-The application fetches the historical stock data for the APPLE stock using API and make predictions for the next 5 months based on that data.
+The application fetches the historical stock data for the APPLE stock using yahoo finance and make predictions for the next 5 days based on that data. It also gives a plot.
 
 ## Exit the program
 To exit the application simply close the window
