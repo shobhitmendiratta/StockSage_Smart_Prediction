@@ -5,7 +5,9 @@ This application uses machine learning models to make prediction about the apple
 Please note that this project is just for fun and it may not be accurate due to the unpredictable nature of the stock market. Please don't rely on this project to buy stocks, do your own research.
 
 % pip install scikit-learn
+
 % pip install matplotlib
+
 % pip install yfinance
 
 ## Run the program
